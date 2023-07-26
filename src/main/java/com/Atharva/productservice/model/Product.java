@@ -10,8 +10,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Document(value="product")
-@AllArgsConstructor
+@Document(value="product") //To define this as product mongodb document
+@AllArgsConstructor // This annotation instructs Lombok to generate a constructor that includes all the fields of the class as parameters.
 @NoArgsConstructor
 @Builder
 @Data
